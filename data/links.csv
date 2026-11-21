@@ -1,0 +1,8 @@
+link,form,record,group,result,received
+E1,V003,Q003,G1,possible,2026-10-02
+E2,V003,Q005,G1,possible,2026-10-02
+E3,V009,Q003,G1,possible,2026-10-02
+E4,V015,Q005,G1,possible,2026-10-02
+E5,V017,Q011,G2,possible,2026-10-02
+E6,V050,Q020,G3,same,2026-10-03
+E7,V003,Q003,G1,different,2026-10-05

@@ -1,0 +1,78 @@
+{
+  "performances": {
+    "summary": "同一节期节目和停靠点，线路可交叠。",
+    "header": [
+      "occurrence",
+      "route",
+      "stop",
+      "day",
+      "period"
+    ]
+  },
+  "frame": {
+    "summary": "家庭抽样层；covered 是名册覆盖人口，eligible 是本期经社区确认的常住人口数。",
+    "header": [
+      "stratum",
+      "community",
+      "eligible",
+      "covered",
+      "households",
+      "drawn"
+    ]
+  },
+  "rounds": {
+    "summary": "现场的轮次设计、抽中的入口及系统抽取步长。",
+    "header": [
+      "round",
+      "occurrence",
+      "entrance",
+      "draw_p",
+      "step",
+      "sampled"
+    ]
+  },
+  "audits": {
+    "summary": "现场访问的一次进入；同一队伍可以再次进场。unit_hint 严格分配给现场访问表单，不是全局人号。",
+    "header": [
+      "form",
+      "round",
+      "unit_hint",
+      "resident_hint",
+      "viewed",
+      "response"
+    ]
+  },
+  "residents": {
+    "summary": "社区访问个体、家庭与自报观看；多场用 + 拼接，未答不同于未看。",
+    "header": [
+      "record",
+      "stratum",
+      "household",
+      "member",
+      "response",
+      "occurrences"
+    ]
+  },
+  "links": {
+    "summary": "同组候选可受联合条件限制；same / different 是现场确认，possible 为尚待确认。",
+    "header": [
+      "link",
+      "form",
+      "record",
+      "group",
+      "result",
+      "received"
+    ]
+  },
+  "follow_up": {
+    "summary": "班次可询问的一组事件；accepted 先占本日额度，单份访问需一次额度。",
+    "header": [
+      "shift",
+      "day",
+      "links",
+      "interviews",
+      "state",
+      "worker"
+    ]
+  }
+}

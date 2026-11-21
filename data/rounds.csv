@@ -1,0 +1,13 @@
+round,occurrence,entrance,draw_p,step,sampled
+F1A,P1,A,0.5,4,yes
+F1B,P1,B,0.5,4,yes
+F2A,P2,A,0.5,3,yes
+F2B,P2,B,0.5,3,yes
+F3A,P3,A,0.5,4,yes
+F3B,P3,B,0.5,4,no
+F4A,P4,A,0.5,3,yes
+F4B,P4,B,0.5,3,yes
+F5A,P5,A,0.5,4,yes
+F5B,P5,B,0.5,4,yes
+F6A,P6,A,0.5,3,yes
+F6B,P6,B,0.5,3,no
