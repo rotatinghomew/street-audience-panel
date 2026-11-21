@@ -1,0 +1,5 @@
+sample,turn,stratum,frame_size,draw_count,probabilities,shift,state,received
+B1,D3,S2,10,2,0.2,J1,accepted,2026-10-04T10:00
+B2,D4,S1,10,3,0.3,J4,offered,2026-10-04T10:30
+B3,D4,S4,10,3,0.3,J5,offered,2026-10-04T10:30
+B4,D3,S3,10,2,0.2,J2,offered,2026-10-04T10:30

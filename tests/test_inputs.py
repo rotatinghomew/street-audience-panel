@@ -25,3 +25,15 @@ class SourceRecords(unittest.TestCase):
         assignments = [row for row in tables['follow_up'] if row['day']=='D3']
         self.assertEqual(1, sum(row['state']=='accepted' for row in assignments))
         self.assertTrue(set(assignments[0]['links'].split('+')) & set(assignments[1]['links'].split('+')))
+
+    def test_supplement_preserves_roster_and_return_types(self):
+        tables = read_tables()
+        roster = {row['household']:row for row in tables['roster']}
+        shifts = {row['shift']:row for row in tables['follow_up']}
+        links = {row['link'] for row in tables['links']}
+        for row in tables['returns']:
+            self.assertIn(row['shift'],shifts)
+            refs = roster if row['phase']=='random' else links
+            self.assertIn(row['target'],refs)
+        self.assertTrue(any(row['action']=='route_closed' for row in tables['availability']))
+        self.assertEqual(1,len({row['frame_frozen'] for row in roster.values()}))

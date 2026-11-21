@@ -74,5 +74,66 @@
       "state",
       "worker"
     ]
+  },
+  "roster": {
+    "summary": "后续名册覆盖的独立登记及保存截面，known=unknown 只说明未访问。",
+    "header": [
+      "stratum",
+      "household",
+      "frame_frozen",
+      "has_earlier",
+      "residents",
+      "known"
+    ]
+  },
+  "plans": {
+    "summary": "封存名册公开的抽取机会及所占班次；原层 S4 名册此时才可用于以后访问，不回填旧覆盖。",
+    "header": [
+      "sample",
+      "turn",
+      "stratum",
+      "frame_size",
+      "draw_count",
+      "probabilities",
+      "shift",
+      "state",
+      "received"
+    ]
+  },
+  "returns": {
+    "summary": "同一 contact 有两种用途时仍分别形成实际回执。phase=verify 不属于抽样。",
+    "header": [
+      "record",
+      "contact",
+      "shift",
+      "phase",
+      "target",
+      "outcome",
+      "member",
+      "occurrences",
+      "relation",
+      "received"
+    ]
+  },
+  "availability": {
+    "summary": "实际班次与已发出的随机邀请回执。无法成行不自动注销接受者已有回访安排。",
+    "header": [
+      "record",
+      "shift",
+      "reference",
+      "action",
+      "available",
+      "received"
+    ]
+  },
+  "releases": {
+    "summary": "文化馆实际发出的估计适用范围；记录截面并非新的补访口径。",
+    "header": [
+      "release",
+      "population",
+      "routes",
+      "as_of",
+      "state"
+    ]
   }
 }

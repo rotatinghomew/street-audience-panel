@@ -1,0 +1,6 @@
+record,shift,reference,action,available,received
+C1,J1,B1,issued,yes,2026-10-04T11:00
+C2,J4,B2,issued,yes,2026-10-05T17:00
+C3,J5,B3,candidate,yes,2026-10-05T17:00
+C4,J5,B3,route_closed,no,2026-10-06T13:00
+C5,J5,B3,partial_alternate,yes,2026-10-06T16:30

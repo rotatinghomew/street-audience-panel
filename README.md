@@ -13,6 +13,11 @@
 - `residents.csv`：社区访问个体、家庭与自报观看；多场用 + 拼接，未答不同于未看。
 - `links.csv`：同组候选可受联合条件限制；same / different 是现场确认，possible 为尚待确认。
 - `follow_up.csv`：班次可询问的一组事件；accepted 先占本日额度，单份访问需一次额度。
+- `roster.csv`：后续名册覆盖的独立登记及保存截面，known=unknown 只说明未访问。
+- `plans.csv`：封存名册公开的抽取机会及所占班次；原层 S4 名册此时才可用于以后访问，不回填旧覆盖。
+- `returns.csv`：同一 contact 有两种用途时仍分别形成实际回执。phase=verify 不属于抽样。
+- `availability.csv`：实际班次与已发出的随机邀请回执。无法成行不自动注销接受者已有回访安排。
+- `releases.csv`：文化馆实际发出的估计适用范围；记录截面并非新的补访口径。
 
 ## 本地检查
 
