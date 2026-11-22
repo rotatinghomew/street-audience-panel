@@ -22,3 +22,7 @@
 ## 本地检查
 
 使用 Python 3.11 及标准库。`python3 inspect_inputs.py` 读取原始资料并列出记录数；`python3 -m unittest discover -s tests` 检查输入资料。检查不计算或发布业务结论。
+
+## 分析脚本
+
+`analysis/estimate.py` 按 `rules.json` 口径计算社区框的分层整群比率估计、无回答边界、联结上下界与补给情景；`python3 analysis/estimate.py` 打印完整数字，导入时不产生输出。`tests/test_analysis.py` 锁定分母、不可相加、未答与联结的处理。
